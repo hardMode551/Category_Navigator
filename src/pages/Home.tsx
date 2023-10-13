@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           <meta name="robots" content="noindex" />
         )}
         <BackButton />
-        <CategoryList categories={currentCategory.children} />
+        <CategoryList categories={currentCategory.children || []} />
       </div>
     );
   } else {

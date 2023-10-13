@@ -16,7 +16,7 @@ type FetchCategoriesResponse = {
 
 export const fetchCategories = createAsyncThunk<FetchCategoriesResponse, void, { state: RootState }>(
   'categories/fetchCategories',
-  async (_, { getState }) => {
+  async () => {
     try {
       const response = await axios.get('https://express-shina.ru/vacancy/catalog');
       return response.data as FetchCategoriesResponse;
