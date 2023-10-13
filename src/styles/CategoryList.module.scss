@@ -1,0 +1,23 @@
+.categoryList {
+  list-style: none;
+  padding: 0;
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+
+    width: 500px;
+    p {
+      margin-right: 10px;
+
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    img {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 220px;
+    }
+  }
+}
