@@ -47,7 +47,7 @@ const categoriesSlice = createSlice({
         const categoryData = action.payload.categories;
         state.currentCategory = categoryData[0];
       })
-      .addCase(fetchCategories.rejected, (state, action) => {
+      .addCase(fetchCategories.rejected, (_, action) => {
         console.error('Error:', action.error.message);
       });
   },
